@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caedmon F. Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="name-container">
+             <a href="index.html"><img src="media/index/chopper.jpg" alt="Chopper, the reindeer doctor from the anime One Piece, looking smug"></a>
+            <a href="index.html"><h1 class="name">   
+                Caedmon Farmer
+            </h1></a>
+        </div>
+        
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html" id="current-page">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </header>
+
+    <div class="main-container">
+        <h1 id="page-header">Projects</h1>
+        
+        <p>This page is for all of my various engineering (and non-engineering) projects</p>
+
+        <div id="table-of-contents">
+            <h3>Table of contents</h3>
+            <ol>
+                <li>Electrical Engineering
+                    <ul>
+                        <li><a href="#vibrator">Astable Multivibrator</a></li>
+                        <li><a href="#shift-reg">Shift Register Lights</a></li>
+                        <li><a href="#kick-drum">Kick Drum</a></li>
+                        <li><a href="#calc">4-bit Calculator (in Minecraft!)</a></li>
+                    </ul>
+                </li>
+                <br>
+                <li>Computer Software
+                    <ul>
+                        <li><a href="#sydphys">SydPhys</a></li>
+                        <li><a href="#robotics">Robotics Finite State Machine</a></li>
+                        <li><a href="#soulless">GMTK Game Jam 2021 Entry (Soulless)</a></li>
+                    </ul>
+                </li>
+                <br>
+                <li>Misc
+                    <ul>
+                        <li><a href="#cad">Computer Aided Design</a></li>
+                        <li><a href="#music">Music</a></li>
+                    </ul>
+            </ol>
+        </div>
+        
+
+        <section>
+            <h1>I. Electrical Engineering</h1>
+        </section>
+
+        <section id="vibrator">
+            <hr>
+            <h2>Astable Multivibrator</h2>
+            <div class="project-video-container">
+                <video src="media/projects/videos/astable_multivibrator.mov" controls class="project-video"></video>
+            </div>
+            <p>Utilizing an online resource (which can be found <a href="https://www.electronics-tutorials.ws/waveforms/astable.html" target="_blank">here</a>), I was able to build an astable multivibrator using my own resistors and capacitors at home. Curious how it worked, I read the provided resource carefully and did my own analysis on it to figure out how it worked. I have since repurposed this circuit on multiple occasions for various projects shown below.</p>
+        </section>
+        <p>On this project, I learned how to use online EE resources and use my circuit analysis skills on a novel non-school project.</p>
+        
+        <section id="shift-reg">
+            <hr>
+            <h2>Shift Register Lights</h2>
+            <div class="project-video-container">
+                <video src="media/projects/videos/shift_reg.MOV" controls class="project-video"></video>
+            </div>
+            <p>Using the Astable Multivibrator from above, I had a Texas Instruments 74HC595 Shift Register I wanted to utilize. I had learned of shift registers from my Digital Logic class, so I wanted to see how they worked in the real world. After finding the datasheet for the 74HC595, I got to work wiring up the circuit to 8 LEDs. I encountered a few issues with misunderstanding which pins were Active Low, but after debugging using my circuit analysis skills, I was able to get the result in the video!</p>
+        </section>
+        <p>On this project, I learned how to find online datasheets, diagnose issues with datasheets, and effectively use multimeters.</p>
+
+        <section id="kick-drum">
+            <hr>
+            <h2>Kick Drum (current project)</h2>
+            
+            <div class="project-video-container">
+            </div>
+
+            <p>Finally, after working on those projects, I wanted to create a kick drum that I could then automate using the shift register.</p>
+            <br>
+            <img src="media/projects/kick-schematic.png" id="kick-schematic-img">
+            <p>First, I needed to make the drum itself. Utilizing an online schematic (shown to the left), I was able to create the first part of the circuit that creates the inital kick signal.</p>
+            <p>Presently, I am working on the Gate-To-Trigger converter. The way the kick works with capacitors, it creates a signal on each charge OR discharge. A Gate-To-Trigger converter would make the charge and discharge occur almost simultaneously, leading to one kick every pulse.</p>
+        </section>
+        
+        <p>On this project, I learned how to find online datasheets, diagnose issues with datasheets, and effectively use multimeters.
+
+        <section id="calc">
+            <hr>
+            <h2>4-bit Calculator in Minecraft</h2>
+            <img src="media/projects/calc.png" class="float-left-img">
+            <p>I had loved my Digital Logic class, and over the summer I was left really wanting to practice the skills I had learned. However, because I was out for the summer, I had no access to the Mines lab for some time. Being too impatient with this, I decided to use what I had, Minecraft.</p>
+            <br>
+            <p>Minecraft is a sandbox video game, where the world is divided into distinct voxels. It also has an internal logic system called Redstone, which just so happens, can be configured to make basic AND, OR, and NOT logic gates. Using this, I built a 4-bit calculator. I redid all of the calculations for the K-map on a piece of paper, and was able to recreate all the gated logic in Minecraft! Some photos of my work and a video of the calculator working can be seen below.</p>
+            <br>
+            <p>For context, the least significant bit of the adders is furtherst to the left, while on the output display it will be on the right. Below we can see the adder correctly outputing 1+1=2</p>
+            <video class="center-video" src="./media/projects/calc_1p1.mov" controls></video>
+            <p>To demonstrate further, here is a video of a variety of inputs being correctly processed, starting with 5+4=9, changing bits and displaying the output as I go</p>
+            <video class="center-video" src="./media/projects/calc_randP.mov" controls></video>
+        </section>
+
+        <section>
+            <h1>II. Computer Software</h1>
+        </section>
+
+        <section id="sydphys">
+            <hr>
+            <h2>SydPhys</h2>
+            <a href="https://github.com/Sydmen/sydPhysics" target="_blank">Github Repository</a>
+            <p>My senior year of high school, I was in a class called STEM Projects, in which we had to choose a project to complete for the semester, and were given complete reign afterwards with how to use classtime. I had just learned C++, and so wanted to make a basic physics engine after being inspired by reading articles of others doing likewise.</p>
+            <br>
+            <p>The result was what I called SydPhys (Syd being an abbreviation of my username, Sydmen, a mispronunciation of my real name). Although I wasn't able to complete all my goals by the end of the class, I was able to create an engine that supported sprite rendering using SDL and a full physics response system between non-rotating boxes and circles. </p>
+        </section>
+        
+        <section id="robotics">
+            <hr>
+            <h2>Robotics Finite State Machine</h2>
+            <p>My senior year of high school, I was also in a robotics club for the FIRST Robotics leauge. I was on Team 3200, representing Eaglecrest High School. I served as a computer programmer, and was tasked with redesigning the automated routine of the robot.</p>
+            <br>
+            <p>In FIRST Robotics, the first part of each game is to have the robot operate fully autonomously. Our present system was a hard-coded routine that was decided upon once, with no dynamic behavior. My task was to redesign this system to allow for more dynamic behavior, while also creating a system that future programmers could use when I left. I decided upon using a finite state machine system for this behavior.</p>
+            <br>
+            <p>Our robot was programmed in Python and converted using C to raw code on the robot. I wrote all of the FSM archeticture in Python, providing routine documentation as I went. Due to other software issues, I was unable to deploy this code onto the robot. In the meantime, I wrote full Markdown documentation and provided Mermaid flow chart diagrams for all the FSMs that I created. The result of this can be seen <a href="https://github.com/Raptacon/Robot-2024/tree/StateMachines/stateMachines" target="_blank">here</a></p>
+        </section>
+        <p>Although I could not deploy the code before I left, due to various unrelated compiler issues, I learned so much about proper code documentation, finite state machines, and Github repo management while on this project.</p>
+
+        <section id="soulless">
+            <hr>
+            <h2>GMTK Game Jame 2021 Entry (Soulless)</h2>
+            <a href="https://sydmen.github.io" target="_blank">Play the game here!</a>
+            <p>I have been programming for quite a long time. I started learning how to program to make video games. During 2021, my brother had begun to also take up pixel art as a hobby. We started to make games with each other for fun, often ending in unfinished, but charming little projects.</p>
+            <br>
+            <p>One YouTube channel we watched quite often was called the <a href="https://www.youtube.com/@GMTK">Game Maker's Toolkit</a>. It was a YouTube video essay channel which explored game devlopment concepts, such as how to make combat feel engaging, effective sound design, among others.</p>
+            <br>
+            <p>This channel hosted a yearly game jam competition. A game jam competition is where you must make a video game adherant to a theme, announced at the beginning, in a certain amount of time. The GMTK game jam was to be hosted over a 2-day period. My brother and I decided to enter together as a team. I was to handle all game engine logic, programming, and sound design. My brother worked as the pixel artist for all sprite assets.</p>
+            <br>
+            <p>The theme was announced as the phrase <a href="https://itch.io/jam/gmtk-2021" target="_blank">"Joined Together"</a>. My brother and I devised a plan to make a game about a mysterious hiker, with the ability to seperate his soul from his body. This soul could not last long without its body, which meant they were <i>joined togehter</i>. This game would be called Soulless. </p>
+            <div style="width: 100%;">
+                <img src="media/projects/soulless.png" class="center-img">
+            </div>
+            <br>
+            <p>After making the game, you are then ranked by others in the game jam on three criteria. Fun, Presentation, and Originality At the jam's conclusion, you are then given a final, public ranking of the game's place in the competition. Our game was able to place <b style="font-weight: 900;">#189 out of 5,633</b>. The final full submission can be seen <a href="https://itch.io/jam/gmtk-2021/rate/1079077" target="_blank">here.</a> We even got in the <a href="https://youtu.be/9U4Zoagd_40?si=acxrdA5aaFaHt-YE&t=31" target="_blank">final showcase video</a> at 0:33.</p>
+            <br>
+            <p>This game can be played <a href="https://sydmen.github.io/" target="_blank">here.</a> The game didn't stop development there. I added a simple leaderboard to time how fast the game was fully played. I then distributed this to my friends, which started a small speedrunning community, in which we all attempted to break my own game in order to beat it as fast as possible. The leaderboard remains up to this day.</p>
+        </section>
+
+        <section>
+            <h1>III. Miscellaneous</h1>
+        </section>
+
+        <section id="cad">
+            <hr>
+            <h2>Computer Aided Design</h2>
+            <p>As seen in my <a href="./experience.html">experience</a>, I am a Certified SolidWorks Expert. My best project done with this certification was my Mines Cornerstone project, in which I designed a complex housing unit for a pot cleaner.</p>
+            <div id="cad-model-container">
+                <img src="media/projects/cad-model.png">
+                <img src="media/projects/cad-model-exploded.png">
+                <img src="media/projects/cad-model-bom.png">
+                <img src="media/projects/cad-model-housing.png">
+            </div>
+            <p>This was then assembled by me using the Colorado School of Mines 3D printers, using 10 seperate prints in order to make them fit within the printers.</p>
+            <img src="media/projects/model-assembled.jpg" class="center-img">
+        </section>
+        
+        <section id="music">
+            <hr>
+            <h2>Music</h2>
+            <p>Here are a couple songs I've made over the past 2 years with their project titles/brief description.</p>
+            
+            <br>
+            <h3 style="color: red;">---->>>>VOLUME WARNING FOR ALL OF THE TRACKS. THEY WERE MIXED TO BE LOUD.<<<<----</h3>
+            <br>
+
+            <h3>Neon Indian</h3>
+            <p>I love the artist Neon Indian, so I tried to recreate his sound.</p>
+            <audio src="./media/music/Neon Indian.mp3" controls></audio>
+
+            <h3>Unreleased Cave Ambience</h3>
+            <p>My biggest inspiration is without a doubt, video game soundtracks, so I made one for a game I never released.</p>
+            <audio src="./media/music/unreleased-cave-ambience.mp3" controls></audio>
+
+            <h3>Galaxy</h3>
+            <p>If you can't tell by now, I am a complete chump for reverb. I made this piano song inspired by Super Mario Galaxy.</p>
+            <audio src="./media/music/SuperMarioGalazy.mp3" controls></audio>
+
+            <h3>Untitled</h3>
+            <p>I'm a big fan of drawn back, simplistic, electronic production, as seen with Aphex Twin and C418. This was my attempt at that</p>
+            <audio src="./media/music/zhjnksfsdfjkl.mp3" controls></audio>
+
+            <h3>Sil</h3>
+            <p>I had recently played the game Silent Hill 2, and was deeply inspired by the soundtrack when I made this song.</p>
+            <audio src="./media/music/sil.mp3" controls></audio>
+
+            <h3>Challenge</h3>
+            <p>It should be clear now that I love electronic music, and especially the Amen break. This was my challenge to myself to make a full song with the amen break drum chops.</p>
+            <audio src="./media/music/challenge.mp3" controls></audio>
+
+            <h3>Washing the Dishes</h3>
+            <p>I made this song after washing the dishes while listening to ambient music. A very long song indeed.</p>
+            <audio src="./media/music/washing the dishes.mp3" controls></audio>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,610 @@
+body{
+    background-color: #1D202B;    
+}
+
+#page-header{
+    color: #ED254E;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+section h2{
+    font-size: 2rem;
+    color: #ED254E;
+}
+
+audio{
+    width: 40%;
+    padding-bottom: 40px;
+}
+
+li{
+    font-size: 1.2rem;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+img{
+    border-radius: 5px;
+}
+
+a{
+    font-weight: 800;
+    color: #20d6a3;
+}
+
+.about-me-container a{
+    color: white;
+}
+
+.main-container p{
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.buisness-card-container p{
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Serif";
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+ol{
+    list-style:upper-roman;
+    list-style-position: inside;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+.site{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+header{
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #13151C;
+    color: white;
+    text-wrap: nowrap;
+    gap: 3rem;
+    z-index: 1000;
+}
+
+section{
+    padding: 40px;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.generic-flex{
+    display: flex;
+}
+
+.center-flex{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.center-flex *{
+    height: 100%;
+    flex-grow: 1;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    text-align: center;
+    gap: 3rem;
+}
+
+.navlinks a{
+    color: white;
+    font-weight: 200;
+}
+
+.navlinks a:hover{
+    transition: 0.1s ease-in;
+    color: #169873;
+}
+
+.name-container{
+    display: flex;
+    flex-grow: 1;
+    text-align: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.name-container img{
+    width: 30px;
+    height: 30px;
+}
+
+.main-container{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #212532;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buisness-card-container{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 2rem;
+}
+
+.buisness-card-container img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#degree-subtext{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+#main-name{
+    font-size: 50;
+    font-weight: 900;
+    color: #ED254E;
+}
+
+.socials a{
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+#resume-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #169873;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    font-style: italic;
+}
+
+.buisness-card-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7FFF7;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    flex-grow: 1;
+    text-wrap: nowrap;
+    gap: 0.5rem;
+}
+
+.buisness-card-buttons p{
+    font-weight: 800;
+    font-size: 1rem;
+    color: black;
+}
+
+.buisness-card-buttons i{
+    background-color: #F7FFF7;
+    color: black;
+}
+
+#button-holder{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 0.5rem;
+}
+
+#current-page{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+footer{
+    font-weight: 200;
+    font-size: smaller;
+}
+
+footer a{
+    font-weight: 400;
+}
+
+#table-of-contents h3{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#table-of-contents{
+    font-weight: 300;
+    background-color: #1d202b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#table-of-contents li a{
+    color: #20d6a3;
+    text-decoration:underline;
+}
+
+#menu-icon{
+    display: none;
+}
+
+.goals-list{
+    display: flex;
+    gap: 1rem;
+}
+
+.goals-list hr{
+    color: #ffffff;
+    opacity: 40%;
+}
+
+.goals-list li{
+    font-weight: 700;
+    color: #ED254E;
+    flex-grow: 1;
+}
+
+.skill-button{
+    padding: 10px;
+    background-color: #1d202b;
+    border: 1px solid white;
+}
+
+.skill-button p{
+    padding: 0;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.skill-button h3{
+    font-size: larger;
+    color: #ED254E;
+}
+
+.skill-button-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#mountain-pic{
+    width: 80%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+.project-video{
+    float: right;
+    margin-left: 20px;
+    width: auto;
+    height: 500px;
+}
+
+.project-video-container{
+    display: block;
+}
+
+.resume-content-container{
+    display: flex;
+    padding: 10px;
+    width: 80%;
+    gap: 1rem;
+}
+
+.resume-title-container{
+    display: flex;
+    width: 80%;
+    justify-items: center;
+}
+
+.resume-title-right{
+    text-align: right;
+}
+
+.resume-title-subtext{
+    font-weight: 200;
+}
+
+.resume-title-subtext-right{
+    font-weight: 200;
+    text-align: right;
+}
+
+.resume-title-main{
+    color: #ED254E;
+}
+
+.resume-title-container *{
+    flex-grow: 1;
+}
+
+.resume-big-title{
+    font-style: 800;
+    font-size: 2rem;
+    padding-top: 50px;
+    padding: 20px;
+}
+
+.resume-container *{
+    flex-grow: 1;
+}
+
+.float-left-img{
+    float: left;
+    margin-right: 10px;
+    width: 40%;
+}
+
+.solidworks-cert-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    width: 80%;
+}
+
+.solidworks-cert-container *{
+    width: 100%;
+}
+
+#cswe{
+    width: 50%;
+    padding: 10px;
+}
+
+.contact-me-container{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 3rem;
+}
+
+.contact-me-container *{
+    width: 100%;
+}
+
+.contact-me-button{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me-button h2{
+    text-align: center;
+}
+
+.contact-me-button i{
+    font-size: 10rem;
+    width: 100%;
+}
+
+#contact-img{
+    width: 40%;
+    height: auto;
+}
+
+.contact-me-big-container{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.center-img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+}
+
+.center-video{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+#cad-model-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 1rem;
+}
+
+#cad-model-container *{
+    width: 100%;
+}
+
+#kick-schematic-img{
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+#phone-number{
+    text-align: left;
+    text-wrap-mode: nowrap;
+}
+
+@media(max-width:1280px){
+    .navlinks{
+        gap: 2rem;
+    }
+
+    .buisness-card-container{
+        flex-direction: column;
+    }
+
+    .contact-me-button i{
+    font-size: 6rem;
+    width: 100%;
+}
+}
+
+@media(max-width:800px){
+    header{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-video{
+        float: none;
+        width: 60%;
+    }
+
+    .float-left-img
+    {
+        width: 100%; 
+    }
+    
+
+    .buisness-card-container img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    .main-container{
+        width: 100%;
+        padding-top: 150px;
+    }
+
+    .navlinks{
+        display: none;
+    }
+    
+    .navlinks.active{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    
+    #menu-icon{
+        display: block;
+    }
+
+    .goals-list{
+        display: block;
+    }
+
+    #mountain-pic{
+        width: 100%;
+    }
+
+    .skill-button-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    
+    .project-video-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-title-container{
+        display: block;
+        width: 80%;
+    }
+
+    .resume-title-right{
+        text-align: left;
+    }
+
+    .resume-title-subtext-right{
+        text-align: left;
+    }
+
+    .solidworks-cert-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #cswe{
+        width: 80%;
+    }
+
+    .contact-me-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center-img{
+        width: 80%;
+    }
+
+    .center-video{
+        width: 100%;
+    }
+
+    audio{
+    width: 100%;
+    }
+    
+    #kick-schematic-img{
+        width: 50%;
+    }
+
+    #contact-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-me-big-container{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .contact-me-button i{
+    font-size: 10rem;
+    width: 100%;
+    }
+
+    #phone-number{
+        text-align: center;
+    }
+}
